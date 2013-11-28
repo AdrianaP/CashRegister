@@ -1,9 +1,9 @@
 //Adriana
 function CashRegister(){
-//Juan
-}
 
-//hello 
+
+
+
 
 
 
@@ -53,52 +53,35 @@ var Inventory = new Array();
 	
 
 
-
-
-function CashRegister(){
+						//reciept
+function Receipt(){
 	
-	
-	function Receipt(){
-		this.items = {};
-			
-	}
-
-
-	var reciepts = {}; //holds all reciepts 
-	var currentReciept = {}; //  current reciept
-	
-	// Rendering of printing for the receipt
-	var printReciept = function (reciept) {}; // prints selected reciept
-	var printRecieptHeader = function (){}; // greetings, adress
-	var printRecieptFooter = function (){}; // thank you
-	var printReceiptBody = function(){}; // the items, other stuff
-	
-	// CONSTANTS
-	var STORE_NAME = "";
-	var STORE_ADDRESS_LINE_1 = "";
-	var STORE_ADDRESS_LINE_2 = "";
-	var STORE_MAIN_PHONE = "";
-	var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
-	
-	var TPS_TAX = 0.5;
-	var TVQ_TAX = 0.975;
-	
-	this.calculateSubtotal = function(){};
-	this.calculateTPSTax = function(){};
-	this.calculateTVQTax = function(){};
-	this.calculateTotal = function(){};
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	this.items = {};	
+		var reciepts = {}; //holds all reciepts 
+		var currentReciept = {}; //  current reciept
+					
+			// Rendering of printing for the receipt
+		var printReciept = function (reciept) {}; // prints selected reciept
+		var printRecieptHeader = function (){}; // greetings, adress
+		var printRecieptFooter = function (){}; // thank you
+		var printReceiptBody = function(){}; // the items, other stuff
+					
+			// CONSTANTS
+		var STORE_NAME = "";
+		var STORE_ADDRESS_LINE_1 = "";
+		var STORE_ADDRESS_LINE_2 = "";
+		var STORE_MAIN_PHONE = "";
+		var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
+					
+			var TPS_TAX = 0.5;
+			var TVQ_TAX = 0.975;
+					
+				this.calculateSubtotal = function(){};
+				this.calculateTPSTax = function(){};
+				this.calculateTVQTax = function(){};
+				this.calculateTotal = function(){};
+					
+		
 //employee login
 
 var employeeName = function (){}
@@ -110,7 +93,7 @@ function Coupon(name,id){
 	this.verifyCoupon = function (){}; //checks if coupon is valid
 	this.expiryDate = new Date();
 	
-	}
+}
 // this are the description for the different coupons we offer 	
 function CouponDescription(savings, type){
 	this.savings = savings;
@@ -125,10 +108,10 @@ function CouponDescription(savings, type){
 	// this is the parameters for out discounts
 	function Discount(value) {
 		this.value = 0%
-}
+};
 	
 	// different types of discounts
-	var DiscountCatergories {
+	var discountCategories {
 		employeeNew = 10%
 		employeeSenior = 20%
 		managerDiscount = 50%
@@ -165,9 +148,5 @@ var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
 
 var refund = function(){}
 
-
-
-
-
-
 }
+};
