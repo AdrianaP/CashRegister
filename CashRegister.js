@@ -3,6 +3,8 @@ function CashRegister(){
 //Juan
 }
 
+//hello 
+
 
 
 function whereAreTeamMembers(Adriana, Victor, Juan, Chris){
