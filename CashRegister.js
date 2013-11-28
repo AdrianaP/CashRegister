@@ -100,15 +100,15 @@ function CashRegister(){
 	
 						// this is the parameters for out discounts
 												function Discount(value) {
-													this.value = 0%
+													this.value = 0;
 			
 												};
 	
 						// different types of discounts
-													var discountCategories {
-														employeeNew = 10%
-														employeeSenior = 20%
-														managerDiscount = 50%
+													var discount = Categories{
+														employeeNew = 0.10;
+														employeeSenior = 0.25;
+														managerDiscount = 0.5;
 													}
 	
 	
@@ -117,7 +117,7 @@ function CashRegister(){
 															this.barCode = barCode;
 	
 	
-														addItem.scan((id)price, quantity){
+														addItem.scan((barCode)price, quantity){
 														switch(item)
 														{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
 														}
@@ -134,17 +134,9 @@ function CashRegister(){
 						// Payment Method ( cash, interact, visa, amex )
 															var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
 															
-															function paymentMethod (){
-																if ("cash"){
-																	
-																}else if ("Interac"){
-																}else if ("Visa"){
-																}else if ("AMEX"){
-																}else ("Mastercard")
-																
-															}
+															function paymentMethod (){};
 															function validatePayment(){};
-															function processPayment (){};
+															function processPayment (method){};
 															
 
 	
