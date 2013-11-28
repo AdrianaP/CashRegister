@@ -7,8 +7,7 @@ function CashRegister(){
 
 
 
-function whereAreTeamMembers(Adriana, Victor, Juan, Chris){
-	}
+
 	
 	// JavaScript Document\
 
