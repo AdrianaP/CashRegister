@@ -73,16 +73,13 @@ function CashRegister(){
 						var printRecieptHeader = function (){}; // greetings, adress
 						var printRecieptFooter = function (){}; // thank you
 						var printReceiptBody = function(){}; // the items, other stuff
-						var displayPrice = function (){};
-						var signature = function (){};
-						
+					
 						// CONSTANTS
-							var STORE_NAME = "chimy_congas";
-							var STORE_ADDRESS_LINE_1 = "";
+							var STORE_NAME = "CHIMMY CHONGAZ";
+							var STORE_ADDRESS_LINE_1 = "Juan Street";
 							var STORE_ADDRESS_LINE_2 = "";
-							var STORE_MAIN_PHONE = "";
-							var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
-							var STORE_CURRENT_TIME_AND_DATE ="";
+							var STORE_MAIN_PHONE = "JUAN-1111";
+							var STORE_RETURN_POLICY = "NO REFUNDS"; // the paragraph about the return policy
 					
 								var TPS_TAX = 0.5;
 								var TVQ_TAX = 0.975;
@@ -111,7 +108,7 @@ function CashRegister(){
 											this.name = name; 
 											this.discount = discount;
 											this.percentage_off = percentage_off;
-											this.expirery_dat = new Date();
+											this.expirery_date = new Date();
 											this.isValid = true;
 											this.condition = function(){}
 											this.apply = function() {
@@ -119,7 +116,12 @@ function CashRegister(){
 												}
 											};
 										
-	
+						
+						// different coupons
+												
+						
+						
+						
 						// this is the parameters for our discounts
 												function Discount(name, discount_percentage) {
 													this.name = name;
