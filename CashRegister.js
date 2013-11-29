@@ -82,6 +82,7 @@ function CashRegister(){
 							var STORE_ADDRESS_LINE_2 = "";
 							var STORE_MAIN_PHONE = "";
 							var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
+							var STORE_CURRENT_TIME_AND_DATE ="";
 					
 								var TPS_TAX = 0.5;
 								var TVQ_TAX = 0.975;
