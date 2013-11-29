@@ -73,7 +73,7 @@ function CashRegister(){
 						var printRecieptHeader = function (){}; // greetings, adress
 						var printRecieptFooter = function (){}; // thank you
 						var printReceiptBody = function(){}; // the items, other stuff
-					
+						var displayPrice = function (){};
 						// CONSTANTS
 							var STORE_NAME = "chimy_congas";
 							var STORE_ADDRESS_LINE_1 = "";
