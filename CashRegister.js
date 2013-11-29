@@ -168,7 +168,7 @@ function CashRegister(){
 					var currentReciept = "Denied, Please come Again!" ; 
 						}
  	
-
+//new after problem
 
 						var refund = function(){
 														};
