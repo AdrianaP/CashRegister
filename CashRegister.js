@@ -107,16 +107,19 @@ function CashRegister(){
 										this.expiryDate = new Date();
 									}
 						// this are the description for the different coupons we offer 	
-										function CouponDescription(savings, type){
-											this.savings = savings;
-											this.type = type;
+										function Coupon(code, name , discount, percentage_off){
+											this.code = code;
+											this.name = name; 
+											this.discount = discount;
+											this.percentage_off = percentage_off;
+											this.expirery_dat = expirey_date;
+											this.isValid = true;
+											this.condition = function(){}
+											this.apply = function() {}
 											}
 											
 						// these are the different coupons we offer
-											var CouponCategories = {
-											TWOFORONE: "2 FOR 1",
-											HALFPRICE: "50% OFF!"
-											}
+											
 	
 						// this is the parameters for out discounts
 												function Discount(value) {
