@@ -97,6 +97,8 @@ function CashRegister(){
 								var employeeName = function (){
 							
 								};
+								var changeEmployeeName = function(){
+								};
 	
 								// this is the coupon parameters
 									function Coupon(name, barCode){
@@ -144,7 +146,9 @@ function CashRegister(){
 														switch(item)
 														{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
 														}
-														addItem.manual(){}
+														addItem.manual(){
+															this.productCode = 0;
+														}
 														
 
 						// removes item from purchase
@@ -168,11 +172,13 @@ function CashRegister(){
 					var currentReciept = "Denied, Please come Again!" ; 
 						}
  	
-//new after problem
 
-						var refund = function(){
-														};
-														
+						var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];													};
+							
+							function refundMethod (){};
+							function validateRefund (){};
+							function processRefund (){};
+							
 						//scan
 						function scan (item, quantity){};								
 
