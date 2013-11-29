@@ -46,21 +46,23 @@ function CashRegister(){
 	
 						// Payment Method ( cash, interact, visa, amex )
 			var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
-				this.cash = totalprice // cash - totalprice = new var change... 
-				this.interact = function ()
-				this.visa = function ()
-				this.amex = function ()
-				this.mastercard = function ()
-			}
+				this.cash = function () {}// cash - totalprice = new var change... 
+				this.interact = function (){}
+				this.visa = function (){}
+				this.amex = function (){}
+				this.mastercard = function (){}	
+						}
 						//they should return a approved or denied string
  
  
 						//reciept
 					function Receipt(){
 					var change = funtion ()
-						if(this.cash > totalprice {
-						totalprice.value - this.cash = change //return the cash 
-					}
+						if(this.cash > totalprice) {
+						totalprice.value - this.cash = change
+						}//return the cash 
+					};
+			
  	
 					this.items = {};	
 					var reciepts = {}; //holds all reciepts 
@@ -100,41 +102,36 @@ function CashRegister(){
 								var changeEmployeeName = function(){
 								};
 	
-								// this is the coupon parameters
-									function Coupon(name, barCode){
-										this.name = name;
-										this.barCode = barCode;
-										this.savings = value;
-										this.verifyCoupon = function (){}; //checks if coupon is valid
-										this.expiryDate = new Date();
-									}
 						// this are the description for the different coupons we offer 	
 										function Coupon(code, name , discount, percentage_off){
 											this.code = code;
 											this.name = name; 
 											this.discount = discount;
 											this.percentage_off = percentage_off;
-											this.expirery_dat = expirey_date;
+											this.expirery_dat = new Date();
 											this.isValid = true;
 											this.condition = function(){}
-											this.apply = function() {}
-											}
-											
-						// these are the different coupons we offer
-											
+											this.apply = function() {
+												Coupon - totalprice.value
+												}
+											};
+										
 	
-						// this is the parameters for out discounts
-												function Discount(value) {
-													this.value = 0;
-			
+						// this is the parameters for our discounts
+												function Discount(name, discount_percentage) {
+													this.name = name;
+													this.discount_percentage = discount_percentage;
+													this.apply = function (discount.type) { 
+													discount.type - totalprice.value 
+													}
 												};
 	
 						// different types of discounts
-													var discount = Categories{
-														employeeNew = 0.10;
-														employeeSenior = 0.25;
-														managerDiscount = 0.5;
-													}
+													var discount.type = [new_employee, senior_employee, manager];
+														this.new_employee("New Employee", 10) = function { 10/totalprice.value*100 }
+														this.senior_employee("Senior Employee", 20) = function {20/totalprice.value*100}
+														this.manager("Manager", 50) = function {50/totalprice.value*100}
+														
 	
 	
 						// adds item to purchase
