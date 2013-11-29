@@ -152,19 +152,16 @@ function (printAllReceipts){
 												function Discount(name, discount_percentage) {
 													this.name = name;
 													this.discount_percentage = discount_percentage;
-													this.apply = function (discount.type) { 
-													discount.type - totalprice.value 
-													}
+													this.apply = function () { }
+												
+													
 												};
 	
 						// different types of discounts
-													var discount.type = [new_employee, senior_employee, manager];
-														this.new_employee("New Employee", 10) = function { 10/totalprice.value*100 }
-														this.senior_employee("Senior Employee", 20) = function {20/totalprice.value*100}
-														this.manager("Manager", 50) = function {50/totalprice.value*100}
-														
-	
-	
+												
+												
+														Discount.apply = function  (){}
+												
 						// adds item to purchase
 														var addItem = function(barCode){}
 															this.barCode = barCode;
