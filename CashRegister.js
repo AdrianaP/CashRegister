@@ -169,6 +169,9 @@ function CashRegister(){
 
 						var refund = function(){
 														};
+														
+						//scan
+						function scan (item, quantity){};								
 
 				}
 };
