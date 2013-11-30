@@ -3,7 +3,7 @@
 function CashRegister(){
  
  
-						// Commercial merchandise
+		// Commercial merchandise
 	function Product(name,barCode,price){
 		this.name = name;
 		this.id = id;
@@ -13,10 +13,10 @@ function CashRegister(){
 		this.category=[];
 		this.onSale=false;
 		this.hasDiscount=false;
-	}
+	};
 
 			
-						// Inventory control
+				// Inventory control
 		function Item(product, quantity){
 			this.product = product;
 			this.quatity = quantity;
@@ -52,14 +52,14 @@ function CashRegister(){
 				this.amex = function (){}
 				this.mastercard = function (){}	
 						}
-						//they should return a approved or denied string
+					//they should return a approved or denied string
  
  
 						//reciept
 					function Receipt(){
-					var change = funtion ()
-						if(this.cash > totalprice) {
-						totalprice.value - this.cash = change
+						var change = funtion ()
+							if(this.cash > totalprice) {
+								totalPrice.value = this.cash = change
 						}//return the cash 
 					};
 			
@@ -93,8 +93,8 @@ function (printAllReceipts){
 
 							var STORE_MAIN_PHONE = "";
 							var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
-							var STORE_CURRENT_TIME_AND_DATE ="";
-							var TRANSACTION_# = "";
+							var STORE_CURRENT_TIME_AND_DATE = "";
+							var TRANSACTION_NUMBER = "";
 
 					
 								var TPS_TAX = 0.5;
@@ -143,8 +143,9 @@ function (printAllReceipts){
 											};
 										
 						
-						// different coupons
-												
+						// age verification
+							var ageVerification = function(age, identification){
+								};					
 						
 						
 						
@@ -157,55 +158,49 @@ function (printAllReceipts){
 													
 												};
 	
-						// different types of discounts
-												
-												
-														Discount.apply = function  (){}
+						// different types of discount						
+						Discount.apply = function  (){}
 												
 						// adds item to purchase
-														var addItem = function(barCode){}
-															this.barCode = barCode;
+						var addItem = function(barCode){}
+						this.barCode = barCode;
 	
 	
-														addItem.scan((barCode)price, quantity){
-														switch(item)
-														{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
+						addItem.scan((barCode)price, quantity){
+							switch(item)
+							{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
 														}
-														addItem.manual(){
-															this.productCode = 0;
-														}
+							addItem.manual(){
+							this.productCode = 0;
+										}
 														
 
 						// removes item from purchase
-															var removeItem = function(){};
-
-
-															var payment = function (){}
+							var removeItem = function(){};
+							var payment = function (){};
 															
 
 						// Payment Method ( cash, interact, visa, amex )
-															var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
+							var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
 															
-															function paymentMethod (){};
-															function validatePayment(){};
-															function processPayment (method){};
+								function paymentMethod (){};
+								function validatePayment(){};
+								function processPayment (method){};
 															
 
 						//CurrentReciept gets void if the transaction is denied ...return message to print on the receipt
-					var voidReceipt = 	function() {
-					if(paymentMethod === "Denied"){
-					var currentReciept = "Denied, Please come Again!" ; 
-						}
+							var voidReceipt = 	function() {
+								if(paymentMethod === "Denied"){
+							var currentReciept = "Denied, Please come Again!" ; 
+						};
  	
 
-						var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];													};
-							
-							function refundMethod (){};
-							function validateRefund (){};
-							function processRefund (){};
+							var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];													};								function refundMethod (){};
+								function validateRefund (){};
+								function processRefund (){};
 							
 						//scan
-						function scan (item, quantity){};								
+								function scan (item, quantity){};								
 
 						
 				}
