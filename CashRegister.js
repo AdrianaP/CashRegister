@@ -198,11 +198,29 @@ function (printAllReceipts){
 							var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];													};								function refundMethod (){};
 								function validateRefund (){};
 								function processRefund (){};
+								
+							var signature = function () {} // if payment by card ask for signature
 							
 						//scan
-								function scan (item, quantity){};								
-
+								function scan (item, quantity){};	
 						
+						//machine screen display 		
+								function displayMessage(){
+											this.greetings = "Welcome";
+											this.price = value;
+											this.changeDisplay = value;
+											this.itemInfo = discription;
+											this.greetings2 = "Thank you";
+											this.age = "Ask for ID card"
+											this.erroritem = "Item no found in system"}				
+											
+							var ageIdentification = funtion () // if item alcool,tobacco,lotto is bought prompt message this.age	
+
+							var moneyConvert = function (){} //if payment with USD get info from www.xe.com database to convert
+							
+							var genReceipt = (){} // generate receipt by starting from 0 and adding 1 after each client
+						
+							var customPrice = (){} //if scan returns error, then prompt to manually enter price
 				}
 		};
 }
