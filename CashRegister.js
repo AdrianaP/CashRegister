@@ -6,7 +6,7 @@ function CashRegister(){
 	// Commercial merchandise
 function Product(name,barCode,price){
 	this.name = name;
-	this.id = id;
+	this.barCode = Barcode;
 	this.salePrice=0;
 	this.price = 0;
 	this.taxable=true;
@@ -72,6 +72,7 @@ function Receipt(){
 							}
 								var displayPrice = function (){};
 								var signature = function (){};
+								
 						
 	// CONSTANTS
 var STORE_NAME = "CHIMMY CHONGAZ";
@@ -79,8 +80,8 @@ var STORE_ADDRESS_LINE_1 = "Juan Street";
 var STORE_ADDRESS_LINE_2 = "";
 var STORE_MAIN_PHONE = "JUAN-1111";
 var STORE_RETURN_POLICY = "NO REFUNDS"; // the paragraph about the return policy
-var STORE_MAIN_PHONE = "";
-var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
+var STORE_MAIN_PHONE = "514 999 999";
+var STORE_RETURN_POLICY = "no return policy"; // the paragraph about the return policy
 var STORE_CURRENT_TIME_AND_DATE = "";
 var TRANSACTION_NUMBER = "";
 
@@ -155,18 +156,21 @@ var payment = function (){};
 
 		// Payment Method ( cash, interact, visa, amex )
 var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
-															
 	function paymentMethod (){};
 	function validatePayment(){};
 	function processPayment (method){};
-															
 
-		//CurrentReciept gets void if the transaction is denied ...return message to print on the receipt
+//not enough money						
+function insufficientFunds (declined){
+}
+															
+	//CurrentReciept gets void if the transaction is denied ...return message to print on the receipt
 var voidReceipt = 	function() {
 	if(paymentMethod === "Denied"){
 		var currentReciept = "Denied, Please come Again!" ; 
 		};
-};
+}
+		
 
 		//refund
  var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];																																				function refundMethod (){};	
