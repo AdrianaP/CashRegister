@@ -2,6 +2,43 @@
 
 function CashRegister(){
  
+ 			// GLOBAL RULES
+ 
+ 	var Declined = function () {};
+	var Approved = function () {};
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	//openregister
+	function openRegister(login){}
+		//closeregister
+	function closeRegister(password){}
+ 
+ 
+ 
+ 
+ 			//employee login
+var employeeName =  ["Adriana", "Victor", "Chris", "Juan"];
+	this.name = name;
+	this.employeeID = employeeID;
+
+		login = function (){
+			prompt ("Please enter employee ID");
+			if (employeeID === true){
+				// after logging in
+				}
+			else{
+			prompt ("Access Denied");
+				}
+			var changeEmployeeName = function(){
+};
+	
+
  
 	// Commercial merchandise
 function Product(name,barCode,price){
@@ -94,30 +131,11 @@ var TRANSACTION_NUMBER = "";
 		this.calculateTotal = function(){};
 					
 		//paymentMethod has to return approved for this to work
-var pointsCard = value;
-	if(paymentMethod === "Approved"){
+var pointsCard =  []
+	if(paymentMethod === Approved){
 		var pointsCard = value + 100;
 };
  		
-		//employee login
-var employeeName =  ["Adriana", "Victor", "Chris", "Juan"];
-	this.name = name;
-	this.employeeID = employeeID;
-
-		login = function (){
-			prompt ("Please enter employee ID");
-			if (employeeID === true){
-				// after logging in
-				}
-			else{
-			prompt ("Access Denied");
-				}
-			var changeEmployeeName = function(){
-};
-		//openregister
-function openRegister(login){}
-		//closeregister
-function closeRegister(password){}
 
 
 
@@ -148,17 +166,21 @@ function Discount(name, discount_percentage) {
 		// adds item to purchase
 var addItem = function(barCode){};
 	this.barCode = barCode;
-		addItem.scan((barCode)price, quantity){
+		addItem.scan((barCode), price, quantity); {
 			switch(item)
-				{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
+				{
+					case "Doritos": this.add(("DD1244")2.79 * quantity); break;
+					}
 					addItem.manual(){
 						this.productCode = 0;
 }
-														
+		}
 
 		// removes item from purchase
 var removeItem = function(){};
-var payment = function (){};
+
+
+var payment = function (){
 															
 
 		// Payment Method ( cash, interact, visa, amex )
@@ -167,38 +189,37 @@ var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
 	function validatePayment(){};
 	function processPayment (method){};
 
-//not enough money						
-function insufficientFunds (declined){
+	//not enough money						
+function insufficientFunds (Declined){
 }
 															
 	//CurrentReciept gets void if the transaction is denied ...return message to print on the receipt
 var voidReceipt = 	function() {
-	if(paymentMethod === "Denied"){
+	if(paymentMethod === Declined){
 		var currentReciept = "Denied, Please come Again!" ; 
 		};
 }
-		
+
+}
 
 		//refund
- var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];																																				function refundMethod (){};	
+ var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];																								
 function validateRefund (){};
 function processRefund (){};
 	var signature = function () {} // if payment by card ask for signature
-							
-		//scan
-function scan (item, quantity){};	
+								
 						
 		//machine screen display 		
 function displayMessage(){
 	this.greetings = "Welcome";
-	this.price = value;
+	this.price = [];
 	this.changeDisplay = value;
-	this.itemInfo = discription;
+	this.itemInfo = ("");
 	this.greetings2 = "Thank you";
 	this.age = "Ask for ID card"
-	this.erroritem = "Item no found in system"
+	this.erroritem = "Item not found in system"
 	}				
-		var ageIdentification = funtion (){} // if item alcool,tobacco,lotto is bought prompt message this.age	
+		var ageVerification = funtion (){} // if item alcool,tobacco,lotto is bought prompt message this.age	
 		var moneyConvert = function (){} //if payment with USD get info from www.xe.com database to convert
 		var genReceipt = (){} // generate receipt by starting from 0 and adding 1 after each client
 		var customPrice = (){} //if scan returns error, then prompt to manually enter price
