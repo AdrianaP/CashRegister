@@ -3,225 +3,195 @@
 function CashRegister(){
  
  
-		// Commercial merchandise
-	function Product(name,barCode,price){
-		this.name = name;
-		this.id = id;
-		this.salePrice=0;
-		this.price = 0;
-		this.taxable=true;
-		this.category=[];
-		this.onSale=false;
-		this.hasDiscount=false;
-	};
+	// Commercial merchandise
+function Product(name,barCode,price){
+	this.name = name;
+	this.id = id;
+	this.salePrice=0;
+	this.price = 0;
+	this.taxable=true;
+	this.category=[];
+	this.onSale=false;
+	this.hasDiscount=false;
+}
 
 			
-				// Inventory control
-		function Item(product, quantity){
-			this.product = product;
-			this.quatity = quantity;
-			this.reserve = 10;
-			this.isBelowReserve = true;
-			this.checkReserve = function(){};
-			this.dateAdded = new Date();
-			this.dateExpired = new Date();
-			this.bestBefore = new Date();
-			this.perishable = false;
-		}
-						//I COULD BE COMPLETELY WRONG BUT THIS IS WHAT I UNDERSTAND 
- 
-			var Categories = {
-				DRINKS: "Drinks & Beverages",
-				SNACKS: "Snacks"
-			}
+	// Inventory control
+function Item(product, quantity){
+	this.product = product;
+	this.quatity = quantity;
+	this.reserve = 10;
+	this.isBelowReserve = true;
+	this.checkReserve = function(){};
+	this.dateAdded = new Date();
+	this.dateExpired = new Date();
+	this.bestBefore = new Date();
+	this.perishable = false;
+};
+	//I COULD BE COMPLETELY WRONG BUT THIS IS WHAT I UNDERSTAND
+var Categories = {
+	DRINKS: "Drinks & Beverages",
+	SNACKS: "Snacks"
+}
 			
- 
- 
-						// Holds all the items in our store
-				var Inventory = new Array();
-					Inventory[0] = new Item( new Product("Doritos", "DD1244", 2.79), 10);
-					Inventory[0].product.category.push(Categories.SNACKS);
-					Inventory[0] = new Item("Doritos", "DD1244", 2.79);
-					Inventory[0].category.push("Chips","Junk Food","Snacks");
+ 	// Holds all the items in our store
+var Inventory = new Array();
+	Inventory[0] = new Item( new Product("Doritos", "DD1244", 2.79), 10);
+	Inventory[0].product.category.push(Categories.SNACKS);
+	Inventory[0] = new Item("Doritos", "DD1244", 2.79);
+	Inventory[0].category.push("Chips","Junk Food","Snacks");
 	
-						// Payment Method ( cash, interact, visa, amex )
-			var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
-				this.cash = function () {}// cash - totalprice = new var change... 
-				this.interact = function (){}
-				this.visa = function (){}
-				this.amex = function (){}
-				this.mastercard = function (){}	
-						}
-					//they should return a approved or denied string
- 
- 
-						//reciept
-					function Receipt(){
-						var change = funtion ()
-							if(this.cash > totalprice) {
-								totalPrice.value = this.cash = change
-						}//return the cash 
-					};
-			
- 	
-					this.items = {};	
+	// Payment Method ( cash, interact, visa, amex )
+var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
+	this.cash = function () {}// cash - totalprice = new var change... 
+	this.interact = function (){}
+	this.visa = function (){}
+	this.amex = function (){}
+	this.mastercard = function (){}	
+}
+					
+ 	//reciept
+function Receipt(){
+	var change = funtion ()
+		if(this.cash > totalprice) {
+			totalPrice.value = this.cash = change
+	};//return the cash 
+}
+				this.items = {};	
 					var reciepts = {}; //holds all reciepts 
 					var currentReciept = {}; //  current reciept
 					
-						// Rendering of printing for the receipt
+					// Rendering of printing for the receipt
 						var printReciept = function (reciept) {}; // prints selected reciept
 						var printRecieptHeader = function (){}; // greetings, adress
 						var printRecieptFooter = function (){}; // thank you
 						var printReceiptBody = function(){}; // the items, other stuff
 
-function (printAllReceipts){
-// in order to complete reading of the day							
+							function (printAllReceipts){
+						// in order to complete reading of the day							
+							}
+								var displayPrice = function (){};
+								var signature = function (){};
+						
+	// CONSTANTS
+var STORE_NAME = "CHIMMY CHONGAZ";
+var STORE_ADDRESS_LINE_1 = "Juan Street";
+var STORE_ADDRESS_LINE_2 = "";
+var STORE_MAIN_PHONE = "JUAN-1111";
+var STORE_RETURN_POLICY = "NO REFUNDS"; // the paragraph about the return policy
+var STORE_MAIN_PHONE = "";
+var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
+var STORE_CURRENT_TIME_AND_DATE = "";
+var TRANSACTION_NUMBER = "";
+
+	var TPS_TAX = 0.5;
+	var TVQ_TAX = 0.975;
+					
+		this.calculateSubtotal = function(){};
+		this.calculateTPSTax = function(){};
+		this.calculateTVQTax = function(){};
+		this.calculateTotal = function(){};
+					
+		//paymentMethod has to return approved for this to work
+var pointsCard = value;
+	if(paymentMethod === "Approved"){
+		var pointsCard = value + 100;
 };
-
-						var displayPrice = function (){};
-						var signature = function (){};
-						
-						
-
-						// CONSTANTS
-							var STORE_NAME = "CHIMMY CHONGAZ";
-							var STORE_ADDRESS_LINE_1 = "Juan Street";
-							var STORE_ADDRESS_LINE_2 = "";
-
-							var STORE_MAIN_PHONE = "JUAN-1111";
-							var STORE_RETURN_POLICY = "NO REFUNDS"; // the paragraph about the return policy
-
-							var STORE_MAIN_PHONE = "";
-							var STORE_RETURN_POLICY = ""; // the paragraph about the return policy
-							var STORE_CURRENT_TIME_AND_DATE = "";
-							var TRANSACTION_NUMBER = "";
-
-					
-								var TPS_TAX = 0.5;
-								var TVQ_TAX = 0.975;
-					
-							this.calculateSubtotal = function(){};
-							this.calculateTPSTax = function(){};
-							this.calculateTVQTax = function(){};
-							this.calculateTotal = function(){};
-					
-						//paymentMethod has to return approved for this to work
-							var pointsCard = value;
-								if(paymentMethod === "Approved"){
-							var pointsCard = value + 100;
-							};
  		
-								//employee login
-								var employeeName = function ["Adriana", "Victor", "Chris", "Juan"]{
-									this.name = name;
-									this.employeeID = employeeID;
-								};
-								
-								login = function (){
-									prompt ("Please enter employee ID");
-									if (employeeID === true){
-										// after logging in
-									}else{
-										prompt ("Access Denied");
-										}
-									
-								var changeEmployeeName = function(){
-								};
+		//employee login
+var employeeName = function ["Adriana", "Victor", "Chris", "Juan"]{
+	this.name = name;
+	this.employeeID = employeeID;
+};
+		login = function (){
+			prompt ("Please enter employee ID");
+			if (employeeID === true){
+				// after logging in
+				}
+			else{
+			prompt ("Access Denied");
+				}
+			var changeEmployeeName = function(){
+};
 	
-						// this are the description for the different coupons we offer 	
-										function Coupon(code, name , discount, percentage_off){
-											this.code = code;
-											this.name = name; 
-											this.discount = discount;
-											this.percentage_off = percentage_off;
-											this.expirery_date = new Date();
-											this.isValid = true;
-											this.condition = function(){}
-											this.apply = function() {
-												Coupon - totalprice.value
-												}
-											};
-										
+		// this are the description for the different coupons we offer 	
+function Coupon(code, name , discount, percentage_off){
+	this.code = code;
+	this.name = name; 
+	this.discount = discount;
+	this.percentage_off = percentage_off;
+	this.expirery_date = new Date();
+	this.isValid = true;
+	this.condition = function(){}
+	this.apply = function() {
+		Coupon - totalprice.value
+		}
+};
 						
-						// age verification
-							var ageVerification = function(age, identification){
-								};					
-						
-						
-						
-						// this is the parameters for our discounts
-												function Discount(name, discount_percentage) {
-													this.name = name;
-													this.discount_percentage = discount_percentage;
-													this.apply = function () { }
+	// this is the parameters for our discounts
+function Discount(name, discount_percentage) {
+	this.name = name;
+	this.discount_percentage = discount_percentage;
+	this.apply = function () {};
+};
+			// different types of discount						
+		Discount.apply = function  (){};
 												
-													
-												};
-	
-						// different types of discount						
-						Discount.apply = function  (){}
-												
-						// adds item to purchase
-						var addItem = function(barCode){}
-						this.barCode = barCode;
-	
-	
-						addItem.scan((barCode)price, quantity){
-							switch(item)
-							{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
-														}
-							addItem.manual(){
-							this.productCode = 0;
-										}
+		// adds item to purchase
+var addItem = function(barCode){};
+	this.barCode = barCode;
+		addItem.scan((barCode)price, quantity){
+			switch(item)
+				{case "Doritos": this.add(("DD1244")2.79 * quantity); break;}
+					addItem.manual(){
+						this.productCode = 0;
+}
 														
 
-						// removes item from purchase
-							var removeItem = function(){};
-							var payment = function (){};
+		// removes item from purchase
+var removeItem = function(){};
+var payment = function (){};
 															
 
-						// Payment Method ( cash, interact, visa, amex )
-							var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
+		// Payment Method ( cash, interact, visa, amex )
+var paymentMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];
 															
-								function paymentMethod (){};
-								function validatePayment(){};
-								function processPayment (method){};
+	function paymentMethod (){};
+	function validatePayment(){};
+	function processPayment (method){};
 															
 
-						//CurrentReciept gets void if the transaction is denied ...return message to print on the receipt
-							var voidReceipt = 	function() {
-								if(paymentMethod === "Denied"){
-							var currentReciept = "Denied, Please come Again!" ; 
-						};
- 	
-
-							var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];													};								function refundMethod (){};
-								function validateRefund (){};
-								function processRefund (){};
-								
-							var signature = function () {} // if payment by card ask for signature
-							
-						//scan
-								function scan (item, quantity){};	
-						
-						//machine screen display 		
-								function displayMessage(){
-											this.greetings = "Welcome";
-											this.price = value;
-											this.changeDisplay = value;
-											this.itemInfo = discription;
-											this.greetings2 = "Thank you";
-											this.age = "Ask for ID card"
-											this.erroritem = "Item no found in system"}				
-											
-							var ageIdentification = funtion () // if item alcool,tobacco,lotto is bought prompt message this.age	
-
-							var moneyConvert = function (){} //if payment with USD get info from www.xe.com database to convert
-							
-							var genReceipt = (){} // generate receipt by starting from 0 and adding 1 after each client
-						
-							var customPrice = (){} //if scan returns error, then prompt to manually enter price
-				}
+		//CurrentReciept gets void if the transaction is denied ...return message to print on the receipt
+var voidReceipt = 	function() {
+	if(paymentMethod === "Denied"){
+		var currentReciept = "Denied, Please come Again!" ; 
 		};
+};
+
+		//refund
+ var refundMethod = ["Cash", "Interact", "Visa", "AMEX", "Master Card"];																																				function refundMethod (){};	
+function validateRefund (){};
+function processRefund (){};
+	var signature = function () {} // if payment by card ask for signature
+							
+		//scan
+function scan (item, quantity){};	
+						
+		//machine screen display 		
+function displayMessage(){
+	this.greetings = "Welcome";
+	this.price = value;
+	this.changeDisplay = value;
+	this.itemInfo = discription;
+	this.greetings2 = "Thank you";
+	this.age = "Ask for ID card"
+	this.erroritem = "Item no found in system"
+	}				
+		var ageIdentification = funtion (){} // if item alcool,tobacco,lotto is bought prompt message this.age	
+		var moneyConvert = function (){} //if payment with USD get info from www.xe.com database to convert
+		var genReceipt = (){} // generate receipt by starting from 0 and adding 1 after each client
+		var customPrice = (){} //if scan returns error, then prompt to manually enter price
+				
+		
 }
 
