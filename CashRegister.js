@@ -100,10 +100,10 @@ var pointsCard = value;
 };
  		
 		//employee login
-var employeeName = function ["Adriana", "Victor", "Chris", "Juan"]{
+var employeeName =  ["Adriana", "Victor", "Chris", "Juan"];
 	this.name = name;
 	this.employeeID = employeeID;
-};
+
 		login = function (){
 			prompt ("Please enter employee ID");
 			if (employeeID === true){
@@ -114,6 +114,10 @@ var employeeName = function ["Adriana", "Victor", "Chris", "Juan"]{
 				}
 			var changeEmployeeName = function(){
 };
+		//openregister
+function openRegister(login){}
+		//closeregister
+function closeRegister(password){}
 	
 		// this are the description for the different coupons we offer 	
 function Coupon(code, name , discount, percentage_off){
