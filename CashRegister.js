@@ -118,6 +118,9 @@ var employeeName =  ["Adriana", "Victor", "Chris", "Juan"];
 function openRegister(login){}
 		//closeregister
 function closeRegister(password){}
+
+function fuckoff
+
 	
 		// this are the description for the different coupons we offer 	
 function Coupon(code, name , discount, percentage_off){
