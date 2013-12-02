@@ -164,18 +164,22 @@ function Discount(name, discount_percentage) {
 		Discount.apply = function  (){};
 												
 		// adds item to purchase
-var addItem = function(barCode){};
+var addItem = function(barCode){
 	this.barCode = barCode;
-		addItem.scan((barCode), price, quantity); {
+		addItem.scan(barCode, price, quantity); {
 			switch(item)
 				{
-					case "Doritos": this.add(("DD1244")2.79 * quantity); break;
-					}
-					addItem.manual(){
-						this.productCode = 0;
-}
+					case "Doritos": this.add("DD1244", 2.79 * quantity)
+					 break;
+					default: 
+					
+				}
 		}
-
+					addItem.manual();{
+						this.productCode = 0;
+				}
+}
+	
 		// removes item from purchase
 var removeItem = function(){};
 
@@ -219,10 +223,10 @@ function displayMessage(){
 	this.age = "Ask for ID card"
 	this.erroritem = "Item not found in system"
 	}				
-		var ageVerification = funtion (){} // if item alcool,tobacco,lotto is bought prompt message this.age	
+		var ageVerification = funtion ();{} // if item alcool,tobacco,lotto is bought prompt message this.age	
 		var moneyConvert = function (){} //if payment with USD get info from www.xe.com database to convert
-		var genReceipt = (){} // generate receipt by starting from 0 and adding 1 after each client
-		var customPrice = (){} //if scan returns error, then prompt to manually enter price
+		var genReceipt = function () {} // generate receipt by starting from 0 and adding 1 after each client
+		var customPrice = function () {} //if scan returns error, then prompt to manually enter price
 				
 		
 }
