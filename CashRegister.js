@@ -119,7 +119,7 @@ function openRegister(login){}
 		//closeregister
 function closeRegister(password){}
 
-function fuckoff
+
 
 	
 		// this are the description for the different coupons we offer 	
